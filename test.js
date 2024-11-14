@@ -17,5 +17,18 @@ for (let i=0; i<6; i++){
     const number2 = Math.floor(Math.random() * 300);
     const result = exponent(number1, number2, i);
     console.log(`Сумма ${number1} и ${number2} в степени ${i} равна ${result}`);
-       
+let n = result
+const isPowerOfTwo = n => {
+    if (n > 0 && (n & (n - 1)) === 0) {
+        let power = 0;
+        let value = 1;
+        while (value < n) {
+            value *= 2;
+            power++;
+        }
+        return `Число ${n} является степенью 2: 2^${power}`;
+    }
+    return `Число ${n} не является степенью 2.`;
+};
+console.log(isPowerOfTwo(n));
 }
