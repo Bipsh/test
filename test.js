@@ -8,4 +8,5 @@ console.log(add(oneNum, oneNum));
 function exponent(a,b,c){
     return (a+b)**c;
 }
-console.log(exponent(oneNum,oneNum,oneNum));
+let exponentResult = exponent(oneNum, oneNum, oneNum);
+console.log(`${exponentResult} Число ${exponentResult % 2 === 0 ? 'четное' : 'нечетное'}`);
